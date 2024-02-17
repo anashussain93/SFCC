@@ -1,0 +1,15 @@
+node_modules
+cartridges/**/cartridge/static/**/css/**
+cartridges/**/cartridge/static/**/js/**
+cartridges/**/cartridge/static/*/styleguide/guide/
+dw.json
+.vscode/
+./dependencies/storefront-reference-architecture/package-lock.json
+./test/acceptance/report/**
+coverage/
+site_template.zip
+*.empty
+.env
+.DS_Store
+site_template.zip
+dw-api-types
