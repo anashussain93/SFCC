@@ -1,0 +1,13 @@
+<body>
+    <h2>${Resource.msg('msg.contactus.message1','contactUs',null)}</h2>
+    <p>${Resource.msg('msg.contactus.message2','contactUs',null)}</p>
+    <ul>
+        <li><strong>${Resource.msg('msg.contactus.fname','contactUs',null)}</strong> ${pdict.firstName}</li>
+        <li><strong>${Resource.msg('msg.contactus.lname','contactUs',null)}</strong> ${pdict.lastName}</li>
+        <li><strong>${Resource.msg('msg.contactus.email','contactUs',null)}</strong> ${pdict.email}</li>
+        <li><strong>${Resource.msg('msg.contactus.phone','contactUs',null)}</strong> ${pdict.phone}</li>
+        <li><strong>${Resource.msg('msg.contactus.msg','contactUs',null)}</strong> ${pdict.msg}</li>
+    </ul>
+    <p>${Resource.msg('msg.contactus.message3','contactUs',null)}</p>
+    <p>${Resource.msg('msg.contactus.thank','contactUs',null)}<br>
+</body>

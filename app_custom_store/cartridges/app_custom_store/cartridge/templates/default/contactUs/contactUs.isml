@@ -1,0 +1,149 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/contactUs.js');
+        assets.addCss('/css/contactUs.css');
+    </isscript>
+    <div class="container contact-us-landing-page">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-12 mb-3">
+                <h3>CONTACT US</h3>
+            </div>
+            <div class="col-md-6">
+                <div class="card no-border">
+                    <div class="card-body">
+                        <form action="${pdict.actionUrl}" class="contact-us" method="POST" name="contact-us">
+                            <!--- contact us first name, last name --->
+                            <div class="row contact-us-name">
+                                <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-first-name">
+                                            ${Resource.msg('label.input.contact-us-first-name', 'contactUs', null)}
+                                        </label>
+                                        <input type="text" required class="form-control required"
+                                            aria-describedby="form-contact-first-name-error" id="contact-first-name"
+                                            name="contactFirstName">
+                                        <div class="invalid-feedback" id="form-contact-first-name-error"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-last-name">
+                                            ${Resource.msg('label.input.contact-us-last-name', 'contactUs', null)}
+                                        </label>
+                                        <input type="text" required class="form-control required"
+                                            aria-describedby="form-contact-last-name-error" id="contact-last-name"
+                                            name="contactLastName">
+                                        <div class="invalid-feedback" id="form-contact-last-name-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--- contact us email --->
+                            <div class="row contact-us-email">
+                                <div class="col">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-email">
+                                            ${Resource.msg('label.input.contact-us-email', 'contactUs', null)}
+                                        </label>
+                                        <input type="email" required class="form-control required"
+                                            aria-describedby="form-contact-email-error" id="contact-email"
+                                            name="contactEmail">
+                                        <div class="invalid-feedback" id="form-contact-email-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--- contact us phone --->
+                            <div class="row contact-us-phone">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="contact-phone">
+                                            ${Resource.msg('label.input.contact-us-phone', 'contactUs', null)}
+                                        </label>
+                                        <input type="tel" pattern="^\d{10,12}$" class="form-control"
+                                            aria-describedby="form-contact-phone-error" id="contact-phone"
+                                            name="contactPhone">
+                                        <div class="invalid-feedback" id="form-contact-phone-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--- contact us message --->
+                            <div class="row contact-us-message">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="contact-message">
+                                            ${Resource.msg('label.input.contact-us-message', 'contactUs', null)}
+                                        </label>
+                                        <textarea class="form-control" id="contact-message" name="contactMessage"
+                                            rows="4" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--- contact us tnc --->
+                            <div class="row contact-us-tnc">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input required type="checkbox" class="form-check-input required" id="contact-tnc"
+                                            name="contactTnc">
+                                        <div class="invalid-feedback" id="form-contact-tnc-error"></div>
+                                        <label class="form-check-label" for="contact-tnc">
+                                            ${Resource.msg('label.input.contact-us-tnc', 'contactUs', null)}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="hidden" id="recaptcha-site-id"
+                                value="${dw.system.Site.current.getCustomPreferenceValue('googleReCaptchaSiteKey')}">
+                            <!--- contact us submit --->
+                            <div class="row contact-us-submnit">
+                                <div class="col-sm-6">
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <button class="btn btn-block btn-primary subscribe-contact-us" type="submit"
+                                            name="submit" value="submit">
+                                            ${Resource.msg('label.input.contact-us-submit', 'contactUs', null)}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="company-info">
+                    <div class="company-info-body">
+                        <div class="single-info">
+                            <div class="single-info-head">
+                                <h3>Contact Customer Care</h3>
+                            </div>
+                            <div class="single-info-body">
+                                <p>A Question?</p>
+                                <div class="mt-5 text-center">
+                                    <p>+8888891596196515</p>
+                                    <p>Contacy our Guest Relations Team 7 days a week between 10am to 10pm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-info">
+                            <div class="single-info-head">
+                                <h3>Contact Customer Care</h3>
+                            </div>
+                            <div class="single-info-body">
+                                <p>A Question?</p>
+                                <div class="mt-5 text-center">
+                                    <p>+8888891596196515</p>
+                                    <p>Contacy our Guest Relations Team 7 days a week between 10am to 10pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</isdecorate>
