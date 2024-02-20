@@ -1,7 +1,7 @@
 node_modules
-cartridges/**/cartridge/static/**/css/**
-cartridges/**/cartridge/static/**/js/**
-cartridges/**/cartridge/static/*/styleguide/guide/
+**/cartridges/**/cartridge/static/**/css/**
+**/cartridges/**/cartridge/static/**/js/**
+**/cartridges/**/cartridge/static/*/styleguide/guide/
 dw.json
 .vscode/
 ./dependencies/storefront-reference-architecture/package-lock.json
@@ -13,3 +13,4 @@ site_template.zip
 .DS_Store
 site_template.zip
 dw-api-types
+/Users/anas.azhar/Documents/SF/SFCC/SFRA/cartridges/app_storefront_base/cartridge/static/default/css/cart.css
