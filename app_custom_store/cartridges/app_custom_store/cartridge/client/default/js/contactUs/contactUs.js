@@ -16,7 +16,7 @@ var base = require('base/contactUs/contactUs');
     }
 
     if ($('.contact-us-signup-message').length === 0) {
-        $('body').append(
+        $('.contact-us-landing-page').prepend(
             '<div class="contact-us-signup-message"></div>'
         );
     }
@@ -37,7 +37,6 @@ base.subscribeContact = function () {
         grecaptcha.ready(function() {
             var recaptchaSiteId = $('#recaptcha-site-id').val();
             grecaptcha.execute(recaptchaSiteId, {action: 'submit'}).then(function(token) {
-                console.log(token);
                 $('form.contact-us').append('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
                 var button = $('.subscribe-contact-us');
                 var url = form.attr('action');

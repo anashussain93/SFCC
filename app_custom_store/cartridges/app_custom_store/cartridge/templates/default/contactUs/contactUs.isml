@@ -1,3 +1,4 @@
+<isinclude template="/components/modules" />
 <isdecorate template="common/layout/page">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
@@ -115,34 +116,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="company-info">
-                    <div class="company-info-body">
-                        <div class="single-info">
-                            <div class="single-info-head">
-                                <h3>Contact Customer Care</h3>
-                            </div>
-                            <div class="single-info-body">
-                                <p>A Question?</p>
-                                <div class="mt-5 text-center">
-                                    <p>+8888891596196515</p>
-                                    <p>Contacy our Guest Relations Team 7 days a week between 10am to 10pm</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-info">
-                            <div class="single-info-head">
-                                <h3>Contact Customer Care</h3>
-                            </div>
-                            <div class="single-info-body">
-                                <p>A Question?</p>
-                                <div class="mt-5 text-center">
-                                    <p>+8888891596196515</p>
-                                    <p>Contacy our Guest Relations Team 7 days a week between 10am to 10pm</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <iscontentasset aid="contact-us-test" />
             </div>
         </div>
     </div>

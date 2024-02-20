@@ -23,7 +23,7 @@ var bootstrapPackages = {
 
 module.exports = [
     {
-        mode: 'production',
+        mode: 'none',
         name: 'js',
         entry: sgmfScripts.createJsPath(),
         output: {
