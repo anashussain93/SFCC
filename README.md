@@ -1,7 +1,7 @@
 # Custom Storefront
 
 The repository has a base cartridge (`app_storefront_base`) provided by Commerce Cloud that is never directly customized or edited. Instead, 
-Also on the top of it (`app_custom_storefront`) is added for customizing storefront.
+Also on the top of it (`app_custom_store`) is added for customizing storefront.
 
 # SFRA version
 
@@ -46,7 +46,7 @@ Use the provided NPM scripts to compile and upload changes to your Sandbox.
 
 # Contact Us Assignment Details
  
-1. Extend **ContactUs-Landing** controller in 'app_custom_storefront'
+1. Extend **ContactUs-Landing** controller in 'app_custom_store'
 2. Include **contactUs.isml**
 3. Added content asset in ISML for right-side content from BM, content asset id is `contact-us-test`
 4. Created a new custom object ID `contact-us` to store data submitted by customers from the Contact Us form.
